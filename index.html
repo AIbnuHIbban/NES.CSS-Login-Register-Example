@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NES</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="nes.css/css/nes.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">LeeNuks<span class="text-danger">ID</span> </a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)" onclick="document.getElementById('dialog-dark').showModal();">Siapa Kami?</a>
+                    </li>
+                    <dialog class="nes-dialog is-dark" id="dialog-dark">
+                        <form method="dialog">
+                            <p class="title">Siapa Kami?</p>
+                            <div class="row justify-content-center">
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <img class="nes-avatar is-rounded is-large" src="icon.png" alt="icon LeeNuksID"  style="image-rendering: pixelated;">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-center">LeeNuks<span class="nes-text is-error">ID</span></p>
+                            <p>Channel Youtube yang <br> membahas berbagai <br> Tutorial dan Pembahasan <br> lainnya mengenai Linux <br> dan Programming.</p>
+                            <p class="text-center">
+                                <a class="nes-text is-error" href="https://www.youtube.com/channel/UCUvXjaQRdHcptVbGoQ_Dkkg" target="blank"><i class="nes-icon youtube is-small"></i> Klik Disini</a> <br><br>
+                                Kalo mau liat Channelnya
+                            </p>
+                            
+
+                            <menu class="dialog-menu">
+                            <button class="nes-btn is-error">Bodo Amat</button>
+                            <button class="nes-btn is-primary">Oke..</button>
+                            </menu>
+                        </form>
+                        </dialog>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Cari Sesuatu..." aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="nes-container with-title mt-3 is-dark">
+            <p class="title">Halaman Login</p>
+            <p>Anda dapat melakukan Login melalui Form Dibawah ini.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-5 mt-4">
+                <div class="card">
+                    <div class="card-header bg-primary">
+                        <h5 class="text-center text-white mb-0">Masuk</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="nes-field">
+                            <label for="name_field">Username</label>
+                            <input autofocus autocomplete="off" type="text" id="name_field" class="nes-input"
+                                placeholder="Username">
+                        </div><br>
+                        <div class="nes-field">
+                            <label for="name_field">Password</label>
+                            <input autocomplete="off" type="password" id="name_field" class="nes-input"
+                                placeholder="*******">
+                        </div><br>
+                        <button type="button" class="nes-btn is-primary btn-block">Login</button><br>
+                        <hr>
+                        <p class="text-center">Belum Punya Akun?</p>
+                        <p class="text-center"><a href="daftar.html">Daftar</a></p>
+                        <hr>
+                        <!-- twitter -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <i class="nes-icon twitter is-medium"></i>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="nes-icon facebook is-medium"></i>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="nes-icon google is-medium"></i>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="nes-icon github is-medium"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

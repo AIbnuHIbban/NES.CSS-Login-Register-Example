@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NES</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="nes.css/css/nes.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">LeeNuks<span class="text-danger">ID</span></a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Cari Sesuatu..." aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="nes-container with-title mt-3 is-dark bg-danger">
+            <p class="title">Halaman Pendaftaran</p>
+            <p>Untuk melakukan Pendaftaran. Silahkan Isi Form Pendaftaran Dibawah ini.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-5 mt-4">
+                <div class="card">
+                    <div class="card-header bg-danger">
+                        <h5 class="text-center text-white mb-0">Daftar</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="nes-field">
+                            <label for="name_field">Nama Lengkap</label>
+                            <input autofocus autocomplete="off" type="text" id="name_field" class="nes-input" placeholder="Nama Lengkap">
+                        </div><br>
+                        
+                        <div class="nes-field">
+                            <label for="name_field">Jenis Kelamin</label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>
+                                        <input type="radio" class="nes-radio" name="answer"/>
+                                        <span>Cowo</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>
+                                        <input type="radio" class="nes-radio" name="answer" />
+                                        <span>Cewek</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div><br>
+                        
+                        <label for="textarea_field">Alamat</label>
+                        <textarea id="textarea_field" class="nes-textarea" placeholder="Alamat"></textarea><br><br>
+                        
+                        <label for="default_select">Status</label>
+                        <div class="nes-select">
+                        <select required id="default_select">
+                            <option value="" disabled selected hidden>Pilih Status</option>
+                            <option value="0">Pelajar</option>
+                            <option value="1">Sudah Bekerja</option>
+                            <option value="1">Sudah Menjadi Bos</option>
+                        </select>
+                        </div><br>
+
+                        <div class="nes-field">
+                            <label for="name_field">Username</label>
+                            <input autocomplete="off" type="text" id="name_field" class="nes-input" placeholder="Username">
+                        </div><br>
+
+                        <div class="nes-field">
+                            <label for="name_field">Password</label>
+                            <input autocomplete="off" type="password" id="name_field" class="nes-input" placeholder="*******">
+                        </div><br>
+
+                        <!-- Dialog -->
+                        <section>
+                            <button type="button" class="nes-btn is-error btn-block" onclick="document.getElementById('dialog-default').showModal();">
+                            Daftar
+                            </button>
+                            <dialog class="nes-dialog" id="dialog-default">
+                                <form method="dialog">
+                                        <section class="message-list">
+                                        <section class="message -left row">
+                                            <div class="col-md-1">
+                                                <i class="nes-bcrikko"></i>
+                                            </div>
+                                            <div class="col-md-11 pl-5">
+                                                <!-- Balloon -->
+                                                <div class="nes-balloon from-left">
+                                                <p>Hi.. Perkenalkan nama saya CS, <br> Saya yang menjaga Website ini. <br> Apakah Kakak yaking Ingin Bergabung ?</p>
+                                                </div>
+                                            </div>
+                                        </section><br><br>
+                                        
+                                        <section class="message -right text-right">
+                                                <!-- Balloon -->
+                                                <div class="nes-balloon from-right">
+                                                <p>Hhhhmmmmm.......</p>
+                                                </div>
+                                        </section>
+                                        </section>
+                                    <menu class="dialog-menu">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="nes-btn btn-block is-error">Gak</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a href="index.html" class="nes-btn btn-block is-success">Ya!</a>
+                                            </div>
+                                        </div>                                    
+                                    </menu>
+                                </form>
+                            </dialog>
+                        </section>
+                        <hr>
+
+                        <p class="text-center">Udah Punya Akun?</p>
+                        <p class="text-center"><a href="index.html">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
